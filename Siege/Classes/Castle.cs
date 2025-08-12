@@ -8,6 +8,7 @@ namespace Siege
 {
     internal class Castle
     {
+        // ----- Atributos ------
         private int vidaAtual { get; set; }
         private int vidaMaxima { get; set; }
         private int NivelDeCastelo { get; set; }
@@ -67,10 +68,7 @@ namespace Siege
         public void GanharVida(int reparo)
         {
             vidaAtual += reparo;
-            if (vidaAtual >= vidaMaxima)
-            {
-                vidaAtual = vidaMaxima; // Garante que a vida não ultrapasse o máximo
-            }
+            if (vidaAtual >= vidaMaxima) { vidaAtual = vidaMaxima; }
         }
     }
 }
