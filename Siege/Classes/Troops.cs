@@ -10,7 +10,7 @@ namespace Siege
     {
         private int DanoEmTropas { get; }
         private int DanoEmCastelo { get; }
-        private int TaxaDeConversão { get; }
-        private Troops FocoDeAlvo { get; }
+        private int TaxaDeConversão { get; set; }
+        // private Troops FocoDeAlvo { get; set; }
     }
 }
